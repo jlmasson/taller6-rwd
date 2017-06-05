@@ -121,7 +121,7 @@ header .contenedor-texto .texto .nombre {
     color: #138310;
 }
 
-.main .educacion .contenedor .info-institucion,
+.main .educacion .contenedor .contenedor-info .info-institucion,
 .main .habilidades-tecnicas .contenedor,
 footer .contenedor,
 .main .habilidades-tecnicas .contenedor .grupo-habilidades {
@@ -131,26 +131,26 @@ footer .contenedor,
     flex-wrap: wrap;
 }
 
-.main .educacion .contenedor .info-institucion .foto {
+.main .educacion .contenedor .contenedor-info .info-institucion .foto {
     width: 30%;
     margin: auto;
 }
 
-.main .educacion .contenedor .info-institucion .foto img {
+.main .educacion .contenedor .contenedor-info .info-institucion .foto img {
     width: 70%;
     display: block;
     margin: auto;
 }
 
-.main .educacion .contenedor .info-institucion .informacion {
+.main .educacion .contenedor .contenedor-info .info-institucion .informacion {
     width: 70%;
 }
 
-.main .educacion .contenedor .info-institucion .institucion {
+.main .educacion .contenedor .contenedor-info .info-institucion .institucion {
     color: #0008c9;
 }
 
-.main .educacion .contenedor .info-institucion .materias li {
+.main .educacion .contenedor .contenedor-info .info-institucion .materias li {
     list-style: square;
     line-height: 30px;
 }
@@ -175,6 +175,7 @@ footer .contenedor,
 .main .habilidades-tecnicas .contenedor .grupo-habilidades .habilidad {
     width: 180px;
     margin-right: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -227,6 +228,99 @@ footer .contenedor .derechos-reservados {
 
     header .menu {
         text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header .menu ul {
+        padding: 0;
+    }
+
+    header .menu ul li {
+        padding-bottom: 30px;
+        /*display: inline-flex;*/
+    }
+
+    header .contenedor .contenedor-texto {
+        margin: 90px 0;
+    }
+    
+    header .contenedor .contenedor-texto .texto .titulo {
+        font-size: 2.5em;
+    }
+
+    header .contenedor .contenedor-texto .texto .nombre {
+        font-size: 1.5em;
+    }
+
+    .main .acerca-de .contenedor .texto p:not(:nth-last-of-type(-n+2)) {
+        display: none;
+    }
+
+    .main .datos-personales .contenedor .titulo {
+        display: none;
+    }
+    
+    .main .acerca-de .contenedor .texto, 
+    .main .datos-personales .contenedor .titulo ~ p,
+    footer .contenedor {
+        font-size: 0.8em;
+    }
+
+    .main .educacion .contenedor,
+    .main .educacion .contenedor .contenedor-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main .educacion .contenedor .contenedor-info .titulo {
+        width: 100%;
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion {
+        width: 48%;
+    }
+
+    .main .educacion .contenedor .contenedor-info hr {
+        display: none;
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion .foto, 
+    .main .educacion .contenedor .contenedor-info .infor-institucion .informacion {
+        width: 100%;
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion .institucion,
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion h4,
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion p {
+        text-align: center;
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion .materias ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion .materias ul li {
+        font-size: 0.7em;
+        display: inline;
+        line-height: 0px;
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion .materias ul li::after {
+        content: ",";
+    }
+
+    .main .educacion .contenedor .contenedor-info .info-institucion .informacion .materias ul li:last-of-type::after {
+        content: "."
+    }
+
+    .main .habilidades-tecnicas .contenedor .grupo-habilidades .habilidad {
+        margin-bottom: 20px;
     }
 
     footer .contenedor .derechos-reservados, footer .contenedor .info-autor {
